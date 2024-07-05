@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop Kiosk</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coffee Shop</h1>
+      <div id="menu">
+        <h2>Menu</h2>
+        <div class="menu-items" id="menuItems">
+          <!-- Menu items will be loaded here by JavaScript -->
+        </div>
+      </div>
+      <div id="order">
+        <h2>Order</h2>
+        <ul id="orderList"></ul>
+        <div class="total-price" id="totalPrice">Total: $0.00</div>
+        <button id="checkoutButton" onclick="checkout()">Checkout</button>
+        <button id="clearOrder" onclick="clearOrder()">Clear Order</button>
+      </div>
+    </div>
+    <div id="checkoutModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Choose Payment Method</h2>
+        <button onclick="pay('Credit Card')">Credit Card</button>
+        <button onclick="pay('WeChat')">WeChat</button>
+        <button onclick="pay('Alipay')">Alipay</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
