@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
       label: "Best",
       image: "images/americano.jpg",
     },
+
+    {
+      name: "Mocha",
+      price: 4.5,
+      label: "Best",
+      image: "images/mocha.webp",
+    },
   ];
 
   localStorage.setItem("menuItems", JSON.stringify(menuItems));
